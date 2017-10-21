@@ -19,7 +19,7 @@ html {
 .banner {
   height: 30rem;
   background-image: url("../images/glasses-bg.png");
-  background-position: center;
+  background-position: 40%;
   background-size: cover;
 }
 
@@ -48,6 +48,10 @@ html {
 
 .title-box span {
   margin: 1rem 2rem 1rem 0;
+}
+
+#menu {
+  display: none;
 }
 
 .biz-name {
@@ -146,8 +150,7 @@ html {
 
   .banner {
     height: 25rem;
-    background-size: cover;
-    background-position: center;
+    background-position: 40%;
   }
 
   .title-box {
@@ -157,9 +160,98 @@ html {
   .motto span {
     font-size: 1.33rem;
     line-height: 1.2;
-    padding: 0.75rem 6rem 0.75rem 4rem;
+    padding: 0.75rem 4rem 0.75rem 4rem;
     margin-top: 5rem;
-    margin-right: 0;
+    margin-right: 2rem;
   }
+}
 
+@media only screen and (max-width: 690px) {
+  .banner {
+    height: 17rem;
+    background-position: 20%;
+}
+
+#menu {
+  display: inline-block;
+}
+
+.large-link {
+  display: none;
+}
+
+.motto {
+  width: 100%;
+}
+
+.motto span {
+  width: 100%;
+  margin-top: 9rem;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/*Offerings div styling*/
+.offerings .centered-container {
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3.77rem auto;
+}
+
+.offerings .centered-container figure {
+  height: 5rem;
+}
+
+.offerings .centered-container figure {
+  justify-content: center;
+}
+
+.offerings .centered-container figure img {
+  padding-bottom: 1rem;
+}
+
+#ruler {
+  margin: 1.54rem auto;
+}
+
+.offerings figcaption {
+  font-size: 0.77rem
+}
+
+/*Practice information styling*/
+
+.practice-info .centered-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-box {
+  margin: 0 0 4rem 0;
+  width: 100%;
+}
+
+.info-box h1 {
+  width: 100%;
+  padding: .5rem auto;
+  text-align: center;
+}
+
+.info-box p {
+  font-size: 0.77rem;
+  margin: auto .5rem;
+}
+
+.copyright {
+  margin: 4rem 0;
+}
+
+.copyright img {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.copyright span {
+  display: none;
 }

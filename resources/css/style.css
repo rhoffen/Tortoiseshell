@@ -136,3 +136,30 @@ html {
   width: auto;
   margin-right: 1rem;
 }
+
+/*Responsive items*/
+
+@media only screen and (max-width: 1100px) {
+  .centered-container {
+    width: 100%;
+  }
+
+  .banner {
+    height: 25rem;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .title-box {
+    margin-top: 0;
+  }
+
+  .motto span {
+    font-size: 1.33rem;
+    line-height: 1.2;
+    padding: 0.75rem 6rem 0.75rem 4rem;
+    margin-top: 5rem;
+    margin-right: 0;
+  }
+
+}

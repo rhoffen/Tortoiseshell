@@ -15,6 +15,7 @@ html {
   display: flex;
 }
 
+/*Top banner section styling*/
 .banner {
   height: 30rem;
   background-image: url("../images/glasses-bg.png");
@@ -69,4 +70,38 @@ html {
   padding: 1.5rem 7rem 1.5rem 5rem;
   margin-top: 10rem;
   margin-right: -2rem;
+}
+
+/*Offerings div styling*/
+.offerings .centered-container {
+  justify-content: center;
+  margin: 3rem auto;
+}
+
+.offerings .centered-container figure {
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 5rem;
+}
+
+.offerings .centered-container figure img {
+  width: inherit;
+  height: auto;
+}
+
+#paper img {
+  width: 3.5rem;
+}
+
+#ruler {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+.offerings figcaption {
+  display: block;
+  text-align: center;
 }

@@ -1,7 +1,6 @@
 html {
   font-size: 18px;
   line-height: 1.4;
-  background-color: azure;
   font-family: Helvetica;
 }
 
@@ -94,10 +93,12 @@ html {
 .offerings .centered-container figure img {
   width: inherit;
   height: auto;
+  padding-top: 1rem;
 }
 
 #paper img {
   width: 3.5rem;
+  padding-top: 0;
 }
 
 #ruler {
@@ -131,7 +132,13 @@ html {
 
 /*Copyright styling*/
 .copyright {
-  margin: 4rem 0 4rem 4rem;
+  padding: 4rem 0 4rem 4rem;
+  background-color: azure;
+
+}
+
+.copyright .centered-container {
+    align-items: center;
 }
 
 .copyright img {
@@ -142,14 +149,14 @@ html {
 }
 
 /*Responsive items*/
-
+/*Tablet size*/
 @media only screen and (max-width: 1100px) {
   .centered-container {
     width: 100%;
   }
 
   .banner {
-    height: 25rem;
+    height: 22rem;
     background-position: 40%;
   }
 
@@ -165,11 +172,19 @@ html {
     margin-right: 2rem;
   }
 }
-
+/*Phone size*/
 @media only screen and (max-width: 690px) {
   .banner {
     height: 17rem;
     background-position: 20%;
+}
+
+.title-box {
+  justify-content: space-between;
+}
+
+.biz-name {
+  display: none;
 }
 
 #menu {
@@ -189,26 +204,28 @@ html {
   margin-top: 9rem;
   text-align: center;
   padding: 1rem 0;
+  font-size: 1rem;
 }
 
 /*Offerings div styling*/
 .offerings .centered-container {
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   margin: 3.77rem auto;
 }
 
 .offerings .centered-container figure {
   height: 5rem;
-}
-
-.offerings .centered-container figure {
   justify-content: center;
 }
 
 .offerings .centered-container figure img {
   padding-bottom: 1rem;
+  padding-top: 0;
+}
+#paper {
+  height: inherit;
 }
 
 #ruler {
@@ -233,7 +250,7 @@ html {
 
 .info-box h1 {
   width: 100%;
-  padding: .5rem auto;
+  padding: .5rem 0;
   text-align: center;
 }
 
@@ -244,6 +261,7 @@ html {
 
 .copyright {
   margin: 4rem 0;
+  padding:  4rem 0;
 }
 
 .copyright img {
